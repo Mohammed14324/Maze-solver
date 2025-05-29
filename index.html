@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="settings" id="settings">
+        <p>Algorithm : </p>
+        <select name="algorithm" id="algorithm" class="algorithm">
+            <option value="dfs">Dfs</option>
+            <option value="bfs">Bfs</option>
+        </select>
+        <p id="start-text" class="start-text"> Start</p>
+        <input type="checkbox" id="start" class="singlecheck" name="choice"  value="start">
+        <p id="end-text" class="end-text"> End</p>
+        <input type="checkbox" id="end" class="singlecheck" name="choice" value="end">
+        <p id="wall-text" class="wall-text"> Wall</p>
+        <input type="checkbox" id="wall" class="singlecheck" name="choice" value="wall">
+        <p id="clear" class="clear"> Clear</p>
+        <input type="checkbox" id="clear" class="singlecheck" name="choice" value="clear">
+        <button id="solve" class="solve" onclick="solve()">Solve</button>
+        <button id="clearbtn" class="clearbtn" onclick="cleare()">Clear</button>
+    </nav>
+    <div class="board" id="board">
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
